@@ -13,6 +13,7 @@ public class ConstructorInjectionController {
     }
 
     // Constructor does not need @Autowired annotation
+    // @Autowired
     public ConstructorInjectionController(InjectionService injectionService) {
         this.injectionService = injectionService;
     }

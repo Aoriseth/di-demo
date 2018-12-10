@@ -7,7 +7,8 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class FieldInjectionController {
 
-
+    // Field needs @autowired annotation
+    @Autowired
     public InjectionServiceImpl injectionService;
 
     public String testService(){

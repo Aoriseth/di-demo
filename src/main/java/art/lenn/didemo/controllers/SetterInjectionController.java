@@ -15,7 +15,7 @@ public class SetterInjectionController {
     }
 
     // Setter needs autowired annotation
-
+    @Autowired
     public void setInjectionService(InjectionService injectionService) {
         this.injectionService = injectionService;
     }
