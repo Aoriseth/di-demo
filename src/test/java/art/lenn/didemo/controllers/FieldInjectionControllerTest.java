@@ -12,7 +12,7 @@ public class FieldInjectionControllerTest {
     @Before
     public void setup(){
         this.fieldInjectionController = new FieldInjectionController();
-        this.fieldInjectionController.injectionService = new InjectionServiceImpl();
+        this.fieldInjectionController.injectionServiceImpl = new InjectionServiceImpl();
     }
 
     @Test
