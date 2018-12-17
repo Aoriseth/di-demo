@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 // Primary will take precedence over other ways that spring figures out multiple options
 @Service
 @Primary
-@Profile("en")
+@Profile({"en","default"})
 public class PrimaryInjectionService implements InjectionService {
     @Override
     public String messageCall() {
