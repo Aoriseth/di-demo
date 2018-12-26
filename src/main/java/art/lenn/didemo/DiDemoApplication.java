@@ -1,17 +1,19 @@
 package art.lenn.didemo;
 
+import art.lenn.didemo.configuration.CustomBeanPostProcessor;
+import art.lenn.didemo.configuration.LifeCycleDemo;
 import art.lenn.didemo.controllers.ConstructorInjectionController;
 import art.lenn.didemo.controllers.FieldInjectionController;
 import art.lenn.didemo.controllers.InjectionController;
 import art.lenn.didemo.controllers.SetterInjectionController;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-
-import java.lang.reflect.Field;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"art.lenn.didemo.controllers","art.lenn.didemo.services"}) // can be used without basePackages =
+@ComponentScan(basePackageClasses = {CustomBeanPostProcessor.class, LifeCycleDemo.class}) // Commenting this line will disable the BeanPostProcessor because it is not loaded into the spring context
 public class DiDemoApplication {
 
 	public static void main(String[] args) {

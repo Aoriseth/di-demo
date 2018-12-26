@@ -1,4 +1,4 @@
-package art.lenn.didemo;
+package art.lenn.didemo.configuration;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
