@@ -39,5 +39,10 @@ public class DiDemoApplication {
         FieldInjectionController fieldcont = (FieldInjectionController) context.getBean("fieldInjectionController");
         System.out.println(fieldcont.testService());
 
+
+        FakeDataSource fakeDataSource = (FakeDataSource) context.getBean("fakeDataSource");
+		System.out.println(fakeDataSource.toString());
+
+
 	}
 }
