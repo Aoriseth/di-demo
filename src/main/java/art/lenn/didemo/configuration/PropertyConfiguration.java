@@ -3,6 +3,7 @@ package art.lenn.didemo.configuration;
 
 import art.lenn.didemo.FakeDataSource;
 import art.lenn.didemo.FakeJMSBroker;
+import art.lenn.didemo.FakeMessageQueue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -26,10 +27,8 @@ public class PropertyConfiguration {
 
     @Value("${didemo.username}")
     String user;
-
     @Value("${didemo.password}")
     String password;
-
     @Value("${didemo.url}")
     String url;
 
@@ -39,6 +38,13 @@ public class PropertyConfiguration {
     String jmsPass;
     @Value("${didemo.jms.url}")
     String jmsUrl;
+
+    @Value("${didemo.queue.username}")
+    String queueUser;
+    @Value("${didemo.queue.password}")
+    String queuePass;
+    @Value("${didemo.queue.url}")
+    String queueUrl;
 
 
 
@@ -69,6 +75,16 @@ public class PropertyConfiguration {
         fakeJMSBroker.setUrl(jmsUrl);
 
         return fakeJMSBroker;
+    }
+
+    @Bean
+    public FakeMessageQueue fakeMessageQueue(){
+        FakeMessageQueue fakeMessageQueue = new FakeMessageQueue();
+        fakeMessageQueue.setUser(queueUser);
+        fakeMessageQueue.setPassword(queuePass);
+        fakeMessageQueue.setUrl(queueUrl);
+
+        return fakeMessageQueue;
     }
 
 

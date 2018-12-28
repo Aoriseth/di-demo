@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "didemo.queue.username",
+      "type": "java.lang.String",
+      "description": "Description for didemo.queue.username."
+    },
+    {
+      "name": "didemo.queue.password",
+      "type": "java.lang.String",
+      "description": "Description for didemo.queue.password."
+    },
+    {
+      "name": "didemo.queue.url",
+      "type": "java.lang.String",
+      "description": "Description for didemo.queue.url."
+    }
+  ] }

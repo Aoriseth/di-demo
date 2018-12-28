@@ -46,6 +46,9 @@ public class DiDemoApplication {
 		FakeJMSBroker fakeJMSBroker = context.getBean(FakeJMSBroker.class);
         System.out.println(fakeJMSBroker.toString());
 
+		FakeMessageQueue fakeMessageQueue = context.getBean(FakeMessageQueue.class);
+		System.out.println(fakeMessageQueue.toString());
+
 
 	}
 }
