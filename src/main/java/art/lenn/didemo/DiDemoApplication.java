@@ -43,6 +43,9 @@ public class DiDemoApplication {
         FakeDataSource fakeDataSource = (FakeDataSource) context.getBean("fakeDataSource");
 		System.out.println(fakeDataSource.toString());
 
+		FakeJMSBroker fakeJMSBroker = context.getBean(FakeJMSBroker.class);
+        System.out.println(fakeJMSBroker.toString());
+
 
 	}
 }
