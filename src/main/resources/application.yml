@@ -1,0 +1,5 @@
+didemo:
+  jms:
+    username: diloginjms
+    password: dipassjms
+    url: localhost:8090

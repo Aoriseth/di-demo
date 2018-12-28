@@ -14,5 +14,20 @@
       "name": "didemo.queue.url",
       "type": "java.lang.String",
       "description": "Description for didemo.queue.url."
+    },
+    {
+      "name": "didemo.jms.username",
+      "type": "java.lang.String",
+      "description": "Description for didemo.jms.username."
+    },
+    {
+      "name": "didemo.jms.password",
+      "type": "java.lang.String",
+      "description": "Description for didemo.jms.password."
+    },
+    {
+      "name": "didemo.jms.url",
+      "type": "java.lang.String",
+      "description": "Description for didemo.jms.url."
     }
   ] }
