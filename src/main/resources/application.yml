@@ -3,3 +3,12 @@ didemo:
     username: diloginjms
     password: dipassjms
     url: localhost:8090
+
+---
+spring:
+  profiles: de
+didemo:
+  jms:
+    username: germanJMSUser
+    password: germanJMSPass
+    url: localhost:9473
